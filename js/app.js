@@ -1,13 +1,23 @@
 (function () {
   var app = angular.module("store", []);
   app.controller("StoreController", function() {
-    this.product = gem;
+    this.products = gems;
   });
 
-  var gem = {
+  var gems = [
+  {
     name: "Chrysalite",
     price: 15.95,
-    description: "This is the description",
-    canPurchase: false
+    description: "Unique colored crystal",
+    canPurchase: true,
+    soldOut: false,
+  },
+  {
+    name: "Quartz",
+    price: 15.95,
+    description: "Opaque colored crystal",
+    canPurchase: true,
+    soldOut: false,
   }
+  ];
 })();
